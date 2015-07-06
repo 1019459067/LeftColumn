@@ -14,6 +14,9 @@
 		569DDE901B4AB0DF001B9033 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569DDE8F1B4AB0DF001B9033 /* Images.xcassets */; };
 		569DDE931B4AB0DF001B9033 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DDE911B4AB0DF001B9033 /* LaunchScreen.xib */; };
 		569DDE9F1B4AB0DF001B9033 /* LeftColumnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 569DDE9E1B4AB0DF001B9033 /* LeftColumnTests.m */; };
+		569DDEAB1B4AB28A001B9033 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569DDEAA1B4AB28A001B9033 /* CenterViewController.m */; };
+		569DDEAE1B4AB2D1001B9033 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569DDEAD1B4AB2D1001B9033 /* LeftViewController.m */; };
+		569DDEB11B4AB34E001B9033 /* UIView+ET.m in Sources */ = {isa = PBXBuildFile; fileRef = 569DDEB01B4AB34E001B9033 /* UIView+ET.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		569DDE981B4AB0DF001B9033 /* LeftColumnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftColumnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		569DDE9D1B4AB0DF001B9033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		569DDE9E1B4AB0DF001B9033 /* LeftColumnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftColumnTests.m; sourceTree = "<group>"; };
+		569DDEA91B4AB28A001B9033 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		569DDEAA1B4AB28A001B9033 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		569DDEAC1B4AB2D1001B9033 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		569DDEAD1B4AB2D1001B9033 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		569DDEAF1B4AB34E001B9033 /* UIView+ET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ET.h"; sourceTree = "<group>"; };
+		569DDEB01B4AB34E001B9033 /* UIView+ET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ET.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		569DDE811B4AB0DF001B9033 /* LeftColumn */ = {
 			isa = PBXGroup;
 			children = (
+				569DDEA81B4AB25F001B9033 /* Controlller */,
 				569DDE861B4AB0DF001B9033 /* AppDelegate.h */,
 				569DDE871B4AB0DF001B9033 /* AppDelegate.m */,
 				569DDE891B4AB0DF001B9033 /* ViewController.h */,
@@ -117,6 +127,19 @@
 				569DDE9D1B4AB0DF001B9033 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		569DDEA81B4AB25F001B9033 /* Controlller */ = {
+			isa = PBXGroup;
+			children = (
+				569DDEA91B4AB28A001B9033 /* CenterViewController.h */,
+				569DDEAA1B4AB28A001B9033 /* CenterViewController.m */,
+				569DDEAC1B4AB2D1001B9033 /* LeftViewController.h */,
+				569DDEAD1B4AB2D1001B9033 /* LeftViewController.m */,
+				569DDEAF1B4AB34E001B9033 /* UIView+ET.h */,
+				569DDEB01B4AB34E001B9033 /* UIView+ET.m */,
+			);
+			path = Controlller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				569DDE8B1B4AB0DF001B9033 /* ViewController.m in Sources */,
+				569DDEB11B4AB34E001B9033 /* UIView+ET.m in Sources */,
+				569DDEAE1B4AB2D1001B9033 /* LeftViewController.m in Sources */,
+				569DDEAB1B4AB28A001B9033 /* CenterViewController.m in Sources */,
 				569DDE881B4AB0DF001B9033 /* AppDelegate.m in Sources */,
 				569DDE851B4AB0DF001B9033 /* main.m in Sources */,
 			);
