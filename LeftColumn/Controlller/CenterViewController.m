@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"main_preview"]];
     [self resgisterNoti];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(10, 100, 60, 40);
@@ -33,7 +33,7 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(buttonNameChange:) name:@"buttonNameChange" object:nil];
 }
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"buttonNameChange" object:nil];;
 }
 - (void)buttonNameChange:(NSNotification *)noti
 {

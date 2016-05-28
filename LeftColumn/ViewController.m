@@ -32,10 +32,11 @@
     
     //中间
     CenterViewController *center = [[CenterViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:center];
     center.delegate = self;
     center.view.frame = self.view.bounds;
     [self.view addSubview:center.view];
-    [self addChildViewController:center];
+    [self addChildViewController:nav];
     
     //手势 拖拽
     [center.view addGestureRecognizer:[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panChange:)]];
